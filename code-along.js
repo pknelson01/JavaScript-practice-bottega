@@ -326,16 +326,14 @@ dashboardGreeting()
 // console.log(greeting2());
 
 var age = 3;
+function buildMenuTwo() {
+    return 'another kids menu';
+};
 
 if (age <= 10) {
     var buildMenu = function () {
         return 'kids menu';
     };
-
-    function buildMenuTwo() {
-        return 'another kids menu';
-    };
-
     console.log(buildMenu());
     console.log(buildMenuTwo());
 }

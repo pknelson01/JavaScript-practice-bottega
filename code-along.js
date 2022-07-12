@@ -285,3 +285,57 @@ adminControls(userTwo)
 adminControls(userThree)
 
 */
+/* Basic Syntax for Building Functions in JavaScript
+
+function helloThere() {
+    console.log('Hello There');
+}
+helloThere()
+function hiThere() {
+    return 'Hi There';
+}
+hiThere()
+var storedText = hiThere();
+storedText;
+
+*/
+/* How Variable Scope Works in JavaScript
+
+function dashboardGreeting() {
+    var userObj = {
+        email: 'pk.elliott11@gmail.com',
+        fullName: 'Parker Nelson'
+    }
+    console.log('Hello There, '.concat(userObj.fullName));
+}
+
+dashboardGreeting()
+
+*/
+// Differences Between Function Expressions and Function Declarations
+
+// function greeting() {
+//     return 'hello there';
+// }
+
+// var greeting2 = function () {
+//     return 'GENERAL KENOBI'
+// };
+
+// console.log(greeting());
+// console.log(greeting2());
+
+var age = 3;
+
+if (age <= 10) {
+    var buildMenu = function () {
+        return 'kids menu';
+    };
+
+    function buildMenuTwo() {
+        return 'another kids menu';
+    };
+
+    console.log(buildMenu());
+    console.log(buildMenuTwo());
+}

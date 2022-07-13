@@ -323,7 +323,7 @@ dashboardGreeting()
 // };
 
 // console.log(greeting());
-// console.log(greeting2());
+/* console.log(greeting2());
 
 var age = 3;
 function buildMenuTwo() {
@@ -336,4 +336,71 @@ if (age <= 10) {
     };
     console.log(buildMenu());
     console.log(buildMenuTwo());
+}
+
+*/
+/* Introduction to JavaScript Closures
+
+function battingAverage() {
+    var hits = 100;
+    var atBats = 300;
+
+    return {
+        getCurrentAverage: function () {
+            return (hits / atBats);
+        },
+        updateHitsAndAtBats: function (hit, atBat) {
+            hits += hit;
+            atBats += atBat;
+        }
+    }
+}
+
+var altuve = battingAverage();
+console.log(altuve.getCurrentAverage());
+altuve.updateHitsAndAtBats(0, 20);
+console.log(altuve.getCurrentAverage());
+altuve.updateHitsAndAtBats(13, 21);
+console.log(altuve.getCurrentAverage());
+altuve.updateHitsAndAtBats(520, 520);
+console.log(altuve.getCurrentAverage());
+
+*/
+/* How to Use the 'this' Keyword in JavaScript Programs
+
+var guide = {
+    title: 'Battle of Heroes',
+    content: 'content will go here',
+    visibleToUser: function (veiwingUserRole) {
+        if (veiwingUserRole === 'paid') {
+            return true;
+        } else {
+            return false;
+        }
+    },
+    renderContent: function (userRole) {
+        if (this.visibleToUser(userRole)) {
+            console.log(this.title + " - " + this.content);
+        } else {
+            this.content = '';
+            console.log(this.title + " - " + this.content);
+        }
+    }
+}
+
+user = { role: 'paid' };
+guide.renderContent(user.role);
+
+*/
+// Guide to For Loops in JavaScript
+
+var jedi = [
+    'Anakin',
+    'Obi-Wan',
+    'Ahsoka',
+    'Qui-Gon'
+];
+
+for (var i = 0; i < jedi.length; i++) {
+    console.log(jedi[i])
 }

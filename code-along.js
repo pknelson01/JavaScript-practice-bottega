@@ -1,5 +1,9 @@
 /* To uncomment: delete the ' * ' at the beginning of the lessons code and then put back after you're done */
 
+function print(x) {
+    console.log(x);
+};
+
 /* How to Work with Variables in JavaScript
 
     var first_name = 'Parker';
@@ -392,15 +396,116 @@ user = { role: 'paid' };
 guide.renderContent(user.role);
 
 */
-// Guide to For Loops in JavaScript
+/* Guide to For Loops in JavaScript
 
-var jedi = [
+var forceUsers = [
     'Anakin',
     'Obi-Wan',
     'Ahsoka',
     'Qui-Gon'
 ];
 
-for (var i = 0; i < jedi.length; i++) {
-    console.log(jedi[i])
+console.log('Traditional For Loop')
+
+for (var i = 0; i < forceUsers.length; i++) {
+    console.log(forceUsers[i])
 }
+
+console.log('For in Loop')
+
+for (forceUser in forceUsers) {
+    // console.log(forceUser);
+    console.log(forceUsers[forceUser]);
+}
+
+console.log('Best For Loop')
+
+forceUsers.forEach(function (element) {
+    console.log(element);
+});
+
+*/
+/* How to Loop Through a JavaScript Object
+
+var student = {
+    name: 'Parker',
+    age: 20,
+    city: 'Saratoga Springs'
+};
+
+for (var key in student) {
+    console.log(key + " => " + student[key]);
+}
+
+*/
+/* Guide to While and Do/While Loops in JavaScript
+
+var players = [
+    'Altuve',
+    'Bregman',
+    'Correa',
+    'Springer'
+];
+
+var i = 0;
+do {
+    console.log(players[i]);
+    i++;
+} while (i < players.length)
+
+*/
+/* Using the Const Variable Type in JavaScript
+
+// const can NOT be redefined.
+// var can be changed wherever. (GLOBAL)
+// let can be changed inside the scope of which its called. (LOCAL)
+
+let city = "Saratoga Springs,";
+console.log(city);
+
+const state = "Utah,";
+console.log(state);
+
+var country = "United States";
+console.log(country);
+
+*/
+/* Guide to Backtick string interpolation in Javascript
+
+const lyrics = 'top of spaghetti...';
+const lyricsTwo = 'covered in cheese!'
+console.log(`On ${lyrics + ' All ' + lyricsTwo}`);
+
+*/
+/* Integrating Conditionals into JavaScript Strings with Ternary Operators
+
+let page = 'Home';
+let pageTwo = 'About';
+console.log(`class = ${page === 'Home' ? 'master-layout' : 'secondary-layout'}`)
+console.log(`class = ${pageTwo === 'Home' ? 'master-layout' : 'secondary-layout'}`)
+
+*/
+/* Introduction to Arrow Functions in JavaScript
+
+// function fullName(fName, lName) {
+//     console.log(`${fName} ${lName}`);
+// }
+// fullName('Parker', 'Nelson')
+
+// fullName = function (fName, lName) {
+//     print(`${fName} ${lName}`);
+// }
+// fullName('Parker', 'Nelson')
+
+// helloWorld = () => { print('Hello There'); }
+// helloWorld();
+
+// firstName = fName => { print(fName.toUpperCase()); }
+// firstName('Parker')
+
+fullName = (fName, lName) => {
+    print(`${fName} ${lName}`)
+}
+fullName('Parker', 'Nelson')
+
+*/

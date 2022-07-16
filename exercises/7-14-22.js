@@ -1,23 +1,56 @@
-// function array(arrayOne, slice) {
-//     x = arrayOne.indexOf(slice)
-//     arrayOne.splice(x, 1)
-//     console.log(arrayOne)
-//     return arrayOne
-// }
-// arrayOne = [1, 2, 5, 3, 4, 5, 6]
-// array(arrayOne, 5)
+function print(x) {
+    console.log(x);
+};
 
-// function removeItems(arrayTwo, sliceTwo) {
-//     x = []
-//     for (let i = 1; i < arrayTwo.length; i++) {
-//         if (i == sliceTwo) {
-//             continue
-//         }
-//         else {
-//             x.push(i)
+// attempt 1
+
+// var myFunction = function (arrayOne, slice) {
+//     for (let i = 0; i < arrayOne.length; i++) {
+//         if (arrayOne[i] == slice) {
+//             arrayOne.splice(i, 1);
+//             i--;
 //         }
 //     }
-//     return x
+//     return arrayOne.length;
+// };
+
+// let z = [1, 2, 3, 4, 5, 6, 7, 8, 2, 9, 9, 10, 11];
+// console.log(myFunction(z, 9));
+// console.log(z);
+
+// attempt 2
+
+// var mySecondFunc = function (arrayTwo, snipe) {
+//     for (let i = 0; i < arrayTwo.length; i++) {
+//         if (arrayTwo[i] == snipe) {
+//             arrayTwo.splice(i, 1)
+//             i--;
+//         }
+//     }
+//     return arrayTwo.length;
 // }
-// z = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-// console.log(removeItems(z, 6))
+
+// let p = [1, 2, 2, 2, 3, 4, 5, 6, 7, 8, 9]
+// print(`The Length is: ${mySecondFunc(p, 2)}`)
+// print(p)
+
+// attempt 3
+
+// var myThirdFunc = function (arrayThree, snipe) {
+//     for (let i = 1; i < arrayThree.length; i++) {
+//         print(i)
+//     }
+// }
+// let d = [1, 2, 2, 3, 4, 5, 6, 7, 9]
+// myThirdFunc(d)
+
+function weReal(numNew) {
+    for (let a = 1; a < numNew; a++) {
+        let b = "";
+        for (let c = 1; c <= a; c++) {
+            b += c + " ";
+        }
+        print(b)
+    }
+}
+print(weReal(8))

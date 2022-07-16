@@ -510,11 +510,3 @@ fullName('Parker', 'Nelson')
 
 */
 
-
-function array(arr, x) {
-    x = arr = [1, 2, 5, 3, 4, 5, 6];
-    y = arr.indexOf(5)
-    print(arr.splice(y, 1))
-}
-
-array()

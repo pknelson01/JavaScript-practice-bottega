@@ -20,19 +20,19 @@ function print(x) {
 
 // Exercise 1 - attempt 2
 
-var mySecondFunc = function (arrayTwo, snipe) {
-    for (let i = 0; i < arrayTwo.length; i++) {
-        if (arrayTwo[i] == snipe) {
-            arrayTwo.splice(i, 1)
-            i--;
-        }
-    }
-    return arrayTwo.length;
-}
+// var mySecondFunc = function (arrayTwo, snipe) {
+//     for (let i = 0; i < arrayTwo.length; i++) {
+//         if (arrayTwo[i] == snipe) {
+//             arrayTwo.splice(i, 1)
+//             i--;
+//         }
+//     }
+//     return arrayTwo.length;
+// }
 
-let p = [1, 2, 2, 2, 3, 4, 5, 6, 7, 8, 9]
-print(`The Length is: ${mySecondFunc(p, 2)}`)
-print(p)
+// let p = [1, 2, 2, 2, 3, 4, 5, 6, 7, 8, 9]
+// print(`The Length is: ${mySecondFunc(p, 2)}`)
+// print(p)
 
 // Exercise 1 - attempt 3
 
@@ -75,3 +75,8 @@ print(p)
 // let x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // print(x)
 // print(`the largest number is: ${myFunc(x)}`)
+
+// var myName = window.prompt("What is your name?");
+
+// console.log(`hello, ${myName}`);
+

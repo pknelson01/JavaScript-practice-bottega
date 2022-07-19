@@ -1,10 +1,8 @@
 function dinerJavaScript() {
-    var entre = 0;
-    var sideOne = 0;
-    var sideTwo = 0;
-    var entrePrice = 0;
-    var sidePrice = 0;
-    var total = parseInt(entrePrice) + parseInt(sidePrice);
+    var entre = '';
+    var sideOne = '';
+    var sideTwo = '';
+    var total = 0;
 
     custName = window.prompt("what is your name?")
     console.log(
@@ -18,45 +16,50 @@ function dinerJavaScript() {
         -Fried Pickles- + $1.50 (4)
         -Mashed Potatoes- (5)
         `)
-    // console.log('Would you like Grilled Chicken or Shrimp? (option 1 or 2?)')
     var answerOne = window.prompt('Would you like, Grilled Chicken or Shrimp? (option 1 or 2?)')
 
     if (answerOne == 1) {
         var entre = 'Grilled Chicken'
-        var entrePrice = '15.50';
+        console.log('Grilled Chicken...')
+        total = 15.50;
     }
     else if (answerOne == 2) {
         var entre = 'Grilled Shrimp'
-        var entrePrice = '17.50';
+        console.log('ugh, Grilled Shrimp...')
+        total = 17.50;
     }
 
 
-    // console.log('That comes with two sides... what would you like for the first? (options 3, 4 or 5?)')
-    var answerTwo = window.prompt('And for the second? (options 3, 4 or 5?)')
+    var answerTwo = window.prompt('That comes with two sides... (options 3, 4 or 5?)')
 
     if (answerTwo == 3) {
-        var sideOne = 'Fries'
+        sideOne += 'Fries'
+        console.log('Really? With a side of fries? Basic Bitch...')
     }
     else if (answerTwo == 4) {
-        var sideOne = 'Fried Pickles'
-        var sidePrice = '1.50'
+        sideOne += 'Fried Pickles'
+        console.log('With a side of Fried Pickles, those are my favorite, you\'re a man of taste...')
+        total += 1.50;
     }
     else if (answerTwo == 5) {
-        var sideOne = 'Mashed Potatoes'
+        sideOne += 'Mashed Potatoes'
+        console.log('With a side of shit...')
     }
 
-    // console.log('That comes with two sides... (options 3, 4 or 5?)')
-    var answerThree = window.prompt('That comes with two sides... (options 3, 4 or 5?)')
+    var answerThree = window.prompt('And for the second? (options 3, 4 or 5?)')
 
     if (answerThree == 3) {
-        var sideTwo = 'Fries'
+        sideTwo += 'Fries'
+        console.log('and a side of fries? Basic Bitch...')
     }
     else if (answerThree == 4) {
-        var sideTwo = 'Fried Pickles'
-        var sidePrice = '1.50'
+        sideTwo += 'Fried Pickles'
+        console.log('and a side of Fried Pickles, those are my favorite, you\'re a man of taste...')
+        total += 1.50;
     }
     else if (answerThree == 5) {
-        var sideTwo = 'Mashed Potatoes'
+        sideTwo += 'Mashed Potatoes'
+        console.log('and a pile of white hot shit.')
     }
 
     console.log(`
@@ -66,10 +69,5 @@ function dinerJavaScript() {
     Your total is:
     $${total}
     `)
-
-    // console.log(entre)
-    // console.log(sideOne)
-    // console.log(sideTwo)
 }
-
 dinerJavaScript()

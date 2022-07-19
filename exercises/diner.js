@@ -29,7 +29,6 @@ function dinerJavaScript() {
         total = 17.50;
     }
 
-
     var answerTwo = window.prompt('That comes with two sides... (options 3, 4 or 5?)')
 
     if (answerTwo == 3) {

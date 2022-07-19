@@ -80,3 +80,66 @@ function print(x) {
 
 // console.log(`hello, ${myName}`);
 
+// Exercise 4 - attempt 1
+
+function Calculator() {
+    // var numOne = 5;
+    // var numTwo = 8;
+    // var op = '+';
+    var total = 0;
+    var first = '';
+    var second = '';
+    var f = Number(first)
+    var s = Number(second)
+
+    var answerOne = window.prompt('input single digit number.')
+    first += answerOne;
+
+    var answerTwo = window.prompt('input another single digit number.')
+    second += answerTwo;
+
+    var answerThree = window.prompt('input operator.')
+    if (answerThree == 'multiply') {
+        total += f * s
+    }
+    else if (answerThree == 'plus') {
+        total += f + s
+    }
+    else if (answerThree == 'minus') {
+        total += f - s
+    }
+    else if (answerThree == 'divide') {
+        total += f / s
+    }
+    else if (answerThree == 'exponent') {
+        total += f ** s
+    }
+
+
+    // if (op == '*') {
+    //     total += numOne * numTwo
+    // }
+    // else if (op == '+') {
+    //     total += numOne + numTwo
+    // }
+    // else if (op == '-') {
+    //     total += numOne - numTwo
+    // }
+    // else if (op == '/') {
+    //     total += numOne / numTwo
+    // }
+    // else if (op == '**') {
+    //     total += numOne ** numTwo
+    // }
+
+    // var total = `${numOne} ${op} ${numTwo}`
+
+    console.log(total)
+    console.log(first)
+    console.log(second)
+    console.log(f)
+    console.log(s)
+
+}
+
+Calculator()

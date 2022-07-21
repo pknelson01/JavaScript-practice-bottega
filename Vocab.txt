@@ -1,0 +1,59 @@
+-- O P E R A T O R S --
+  
+  - Spread Operator : Takes each item and returns it seperately.
+    | Takes each item and returns it seperately.
+      | console.log(...highScore)
+      | let x = 'Hello';
+      | console.log(x) -> ('H', 'e', 'l', 'l', 'o');
+
+  - Ternary Operator : 
+    | The Conditional operator assigns a value to a variable based on a 
+    | condition.
+      | name == ('Parker') ? true : false ;
+
+  - Logical Operator : ( && = and, || = or, ! = not)
+    | 
+
+  -  : 
+    | 
+
+  -  : 
+    | 
+
+  -  : 
+    | 
+
+  -  : 
+    | 
+
+-- F U N C T I O N S --
+
+  - Bind Function : 
+    | 
+
+  - Arrow Function : 
+    | 
+
+  -  : 
+    | 
+
+  -  : 
+    | 
+
+
+-- M I S C --
+
+  - Value : 
+    | 
+
+  - Key : 
+    | 
+
+  - Object : 
+    | 
+
+  -  : 
+    | 
+
+  -  : 
+    | 

@@ -621,5 +621,100 @@ console.log(strap.togglePopper())
 console.log(strap.togglePopper())
 
 */
-// 
+/* Guide to the JavaScript Spread Operator
 
+// let shoppingCart = [345, 375, 765, 123];
+// let newItems = [98, 123];
+
+// shoppingCart.push(...newItems);
+// console.log(shoppingCart); // [ 345, 375, 765, 123, 98, 123 ]
+
+// const shoppingCart = [345, 375, 765, 123];
+// // const updatedCart = shoppingCart.slice();
+// const updatedCart = [...shoppingCart];
+// updatedCart.push(5);
+// console.log(updatedCart);
+// console.log(shoppingCart);
+
+// const orderTotals = [1, 5, 1, 10, 2, 3]
+// print(Math.max(...orderTotals));
+// print(Math.max(1, 5, 1, 10, 2, 3));
+
+const { starter, closer, ...relievers } = {
+    starter: 'Verlander',
+    closer: 'Giles',
+    relief_1: 'Morton',
+    relief_2: 'Gregerson'
+}
+
+print(starter);
+print(closer);
+print(relievers);
+
+*/
+/* Guide to JavaScript Bind Function
+
+// constructor() {
+//     this.handleCLick = handleClick.bind(this);
+// }
+
+const userOne = {
+    firstName: 'Parker',
+    lastName: 'Nelson'
+}
+
+const userTwo = {
+    firstName: 'Ava',
+    lastName: 'Neuenschwander'
+}
+
+const fullName = function () {
+    return `${this.lastName}, ${this.firstName}`;
+}
+
+const parker = fullName.bind(userOne);
+const ava = fullName.bind(userTwo);
+
+console.log(parker());
+console.log(ava());
+
+*/
+// How to Check if Two Objects Have Equal Values
+
+const isEqual = (obj1, obj2) => {
+    const obj1Keys = Object.keys(obj1);
+    const obj2Keys = Object.keys(obj2);
+
+    if (obj1Keys.length !== obj2Keys.length) {
+        return false;
+    }
+
+    for (let objKey of obj1Keys) {
+        if (obj1[objKey] !== obj2[objKey]) {
+            return false;
+        }
+    }
+
+    return true;
+};
+
+const obj1 = {
+    name: "Kristine",
+    age: 13,
+    favorites: {
+        food: "Pizza",
+        vacation: "Disneyland"
+    }
+};
+
+const obj2 = {
+    name: "Kristine",
+    age: 13,
+    favorites: {
+        food: "Pizza",
+        vacation: "Disneyland"
+    }
+};
+
+obj1 == obj2;
+isEqual(obj1, obj2);

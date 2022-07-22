@@ -1,0 +1,99 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    transition: 0.6s;
+    background-color: rgb(0, 0, 0, 0.8);
+    /* video i watched on stick headers included the z-index thing and i have no idea what it does nor can see any difference with it vs without it so just gonna leave it here for now. */
+    /* z-index: 100000; */
+}
+
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+    /* justify-content: center; */
+    margin: 10px 0 0 0;
+    /* width: 48vw; */
+    width: 10vw;
+
+}
+
+.header-left>.logo-wrapper img {
+    width: 100%;
+    height: 80px;
+}
+
+.header-middle {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 42px; */
+    /* width: 52vw; */
+    /* width: 90vw; */
+    width: 70vw;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-link {
+    width: 140px;
+    text-align: center;
+}
+
+.nav-link a {
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    border-bottom: 100px solid rgb(121, 182, 255);
+}
+
+.nav-link a:hover {
+    color: rgb(121, 182, 255);
+    letter-spacing: 2px;
+    /* above value will remain commented out til i can remember how to make all the text stay put while one of the links letters space out two pixels */
+}
+
+.case-studies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links button {
+    margin-left: 70px;
+    background-color: rgb(121, 182, 255);
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    color: black;
+}
+
+.header-right {
+    display: flex;
+    /* width: 52vw; */
+    width: 10vw;
+}
+
+.case-studies {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-right button {
+    width: 150px;
+    background-color: rgb(121, 182, 255);
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    color: black;
+}

@@ -1,0 +1,38 @@
+/** About spacers **/
+.spacer-between-header-and-home {
+    height: 100px;
+}
+
+.spacer-after-home {
+    height: 60px;
+}
+
+.spacer-about-1 {
+    width: 14vw;
+}
+
+.spacer-about-2 {
+    width: 4vw;
+}
+
+.spacer-about-3 {
+    width: 14vw;
+}
+
+.spacer-after-about {
+    height: 150px;
+    color: transparent;
+}
+
+.spacer-after-projects {
+    height: 150px;
+    color: transparent;
+}
+
+.spacer10 {
+    height: 110px;
+}
+
+.spacer11 {
+    height: 80px;
+}

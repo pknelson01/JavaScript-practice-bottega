@@ -1,0 +1,61 @@
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 850px;
+    margin: 0 30px 30px 30px;
+
+    >.about-content {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.about-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        letter-spacing: 3px;
+        color: rgb(121, 182, 255);
+        border-radius: 15px;
+        transition: 1s;
+
+        &:hover {
+            letter-spacing: 10px;
+            color: rgb(121, 182, 255);
+            background-color: transparent;
+        }
+    }
+}
+
+.left {
+    display: flex;
+    justify-content: flex-end;
+    width: 33vw;
+}
+
+.about-content {
+    >.left-side {
+        >.image-of-me {
+            display: flex;
+            margin-top: 20px;
+
+            img {
+                height: 500px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+.right {
+    width: 33vw;
+    display: flex;
+
+    >.txt {
+        margin-left: 0;
+        letter-spacing: 2px;
+    }
+}

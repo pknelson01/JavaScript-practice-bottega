@@ -1,0 +1,57 @@
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 850px;
+    margin: 0 30px 30px 30px;
+}
+
+.about-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-header h1 {
+    letter-spacing: 3px;
+    color: rgb(121, 182, 255);
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.about-header h1:hover {
+    letter-spacing: 10px;
+    color: rgb(121, 182, 255);
+    background-color: transparent;
+}
+
+.about>.about-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-end;
+    width: 33vw;
+}
+
+.about-content>.left-side>.image-of-me {
+    display: flex;
+    margin-top: 20px;
+}
+
+.about-content>.left-side>.image-of-me img {
+    height: 500px;
+    border-radius: 8px;
+}
+
+.right {
+    width: 33vw;
+    display: flex;
+}
+
+.right>.txt {
+    margin-left: 0;
+    letter-spacing: 2px;
+}

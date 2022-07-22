@@ -1,0 +1,92 @@
+.portfolio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.portfolio-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    h1 {
+        letter-spacing: 3px;
+        color: rgb(121, 182, 255);
+        border-radius: 15px;
+        transition: 1s;
+        margin: 0;
+
+        &:hover {
+            letter-spacing: 10px;
+            color: rgb(121, 182, 255);
+            background-color: transparent;
+        }
+    }
+
+    h4 {
+        color: gray;
+        margin: 0;
+        font-size: .8rem;
+        letter-spacing: .5px;
+    }
+}
+
+.one-three {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.four-six {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-one {
+    display: flex;
+    width: 220px;
+    height: 400px;
+    background-color: gray;
+    margin-right: 15px;
+}
+
+.project-two {
+    display: flex;
+    width: 220px;
+    height: 400px;
+    background-color: gray;
+}
+
+.project-three {
+    display: flex;
+    width: 220px;
+    height: 400px;
+    background-color: gray;
+    margin-left: 15px;
+}
+
+.project-four {
+    display: flex;
+    width: 220px;
+    height: 400px;
+    background-color: gray;
+    margin-right: 15px;
+}
+
+.project-five {
+    display: flex;
+    width: 220px;
+    height: 400px;
+    background-color: gray;
+}
+
+.project-six {
+    display: flex;
+    width: 220px;
+    height: 400px;
+    background-color: gray;
+    margin-left: 15px;
+}

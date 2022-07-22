@@ -679,7 +679,7 @@ console.log(parker());
 console.log(ava());
 
 */
-// How to Check if Two Objects Have Equal Values
+/* How to Check if Two Objects Have Equal Values
 
 const isEqual = (obj1, obj2) => {
     const obj1Keys = Object.keys(obj1);
@@ -699,22 +699,100 @@ const isEqual = (obj1, obj2) => {
 };
 
 const obj1 = {
-    name: "Kristine",
-    age: 13,
+    name: "Ava",
+    age: 20,
     favorites: {
-        food: "Pizza",
+        food: "Fried Pickles",
         vacation: "Disneyland"
     }
 };
 
 const obj2 = {
-    name: "Kristine",
-    age: 13,
+    name: "Parker",
+    age: 20,
     favorites: {
         food: "Pizza",
-        vacation: "Disneyland"
+        vacation: "Italia"
     }
 };
 
 obj1 == obj2;
 isEqual(obj1, obj2);
+
+*/
+/* Introduction to Object Oriented Programming in JavaScript
+
+class Instructor {
+    constructor({ name, role = 'Assistant' }) {
+        this.name = name;
+        this.role = role;
+    }
+    renderDetails() {
+        console.log(`${this.name}: ${this.role}`);
+    }
+    static helloWorld() {
+        console.log('Hello There')
+    }
+    static canTeach(instructor) {
+        return (instructor.role === 'Jedi Temple');
+    }
+}
+
+const pk = new Instructor({ name: 'Parker Nelson' });
+const ava = new Instructor({ name: 'Ava Nelson', role: 'Supervisor' });
+
+Instructor.helloWorld();
+let ani = new Instructor({ 'name': 'Anakin Skywalker', role: 'Jedi Temple' })
+console.log(
+    `${ani.name} can teach: ${Instructor.canTeach(ani)}`
+)
+
+pk.renderDetails();
+ava.renderDetails();
+
+*/
+/* Introduction to JavaScript Promises
+
+let obiGreeting = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('Hello There')
+    }, 2000);
+
+    setTimeout(() => {
+        reject(Error('These are not the Droids you are looking for.'))
+    }, 2000);
+});
+
+obiGreeting
+    .then(data => {
+        console.log(data);
+    })
+    .catch(err => {
+        console.error(err);
+    })
+    .finally(i => {
+        console.log('I have the  H I G H   G R O U N D')
+    });
+
+*/
+/* Using a fetch Promise to Communicate with APIs in JavaScript
+
+console.log('Starting fetch call');
+const postsPromise = fetch('https://api.dailysmarty.com/posts')
+console.log('After fetch call');
+console.log(postsPromise);
+console.log('After program has run');
+
+postsPromise
+    .then(data => data.json())
+    .then(data => {
+        data.posts.forEach((item) => {
+            console.log(item.title);
+        })
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+
+*/
+// 

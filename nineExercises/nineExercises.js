@@ -109,3 +109,5 @@ function Calculator(numOne, numTwo, op) {
 }
 
 Calculator(5, 8, '*')
+
+// Exercise 5 - attempt 1

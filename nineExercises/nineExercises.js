@@ -111,3 +111,24 @@ function Calculator(numOne, numTwo, op) {
 Calculator(5, 8, '*')
 
 // Exercise 5 - attempt 1
+
+
+
+// Exercise 6 - attempt 1
+
+function Temperature(fahrenheit) {
+    let sub = fahrenheit - 32
+    let div = sub * .5556
+    console.log(div)
+}
+
+Temperature(96)
+
+// Exercise 7 - attempt 1
+
+function Grading(name, finalGrade) {
+
+    finalGrade >= 80 ? console.log(`${name} passed the exam with a score of ${finalGrade}%`) : console.log(`${name} did not pass.`);
+}
+
+Grading('Parker', 80)

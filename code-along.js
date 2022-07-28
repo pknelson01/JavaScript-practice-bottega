@@ -795,4 +795,150 @@ postsPromise
     })
 
 */
+/* How to Group Promises Together with Promise.all in JavaScript
+
+const greeting = new Promise((resolve, reject) => {
+    resolve('Hello there');
+    reject('Oops');
+  });
+
+  const updateAccount = new Promise((resolve, reject) => {
+    resolve('updating login...');
+    reject('updating error');
+  });
+
+  const loginActivities =  Promise.all([greeting, updateAccount]);
+
+  console.log(loginActivities);
+
+  loginActivities.then(res => {
+    res.forEach(activity => {
+      console.log(activity);
+    })
+  })
+
+*/
+// Introduction to Async and Await in JavaScript
+
+/* user logs into the system
+
+// verify credentials
+  // redirect to dashboard
+    // update the db account
+      // API calls to bring the user data...
+        // ..........
+const login = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        resolve('User logged in...');
+        }, 2000);
+    })
+}
+
+const updateAccount = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        resolve('updating last login...');
+        }, 2000);
+    })
+}
+
+async function loginActivities() {
+    const returnedLogin = await login();
+    console.log(returnedLogin);
+
+    const returnedUpdateAccount = await updateAccount();
+    console.log(returnedUpdateAccount);
+}
+
+loginActivities();
+
+*/
+/* Combining Async / Await with Closures to Ensure All Processes Have Run
+
+const login = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('User logged in...');
+        }, 2000);
+    })
+}
+
+const updateAccount = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('updating last login...');
+        }, 2000);
+    })
+}
+
+async function loginActivities(login, updateAccount) {
+    const returnedLogin = await login;
+    console.log(returnedLogin);
+
+    const returnedUpdateAccount = await updateAccount;
+    console.log(returnedUpdateAccount);
+}
+
+loginActivities(login(), updateAccount());
+
+*/
+/* Using Async / Await for Communicating with Outside APIs in JavaScript
+
+async function queryApis() {
+    const postsPromise = fetch('https://api.dailysmarty.com/posts');
+    const posts = await postsPromise.then(res => res.json());
+    console.log(posts);
+
+    const reposPromise = fetch('https://api.github.com/users/jordanhudgens/repos');
+    const repos = await reposPromise.then(res => res.json());
+    console.log(repos);
+}
+
+queryApis();
+
+*/
+/* Implementing Error Handling In a JavaScript Async / Await Function
+
+async function queryApis() {
+    try {
+        const postsPromise = fetch('http://api.dailysmarty.com/posts');
+        const posts = await postsPromise.then(res => res.json());
+        console.log(posts);
+    } catch (err) {
+        console.log(err);
+        console.log('There was an error with the DailySmarty API');
+    }
+
+    try {
+        const reposPromise = fetch('https://api.github.com/users/jordanhudgens/repos');
+        const repos = await reposPromise.then(res => res.json());
+        console.log(repos);
+    } catch (err) {
+        console.log(err);
+        console.log('There was an error with the GitHub API');
+    }
+}
+
+queryApis();
+
+*/
+/*
+
+// title
+// type of heading
+
+const headingGenerator = (title, typeOfHeading) => {
+    return `
+        <h${typeOfHeading}>${title}</h${typeOfHeading}>
+    `
+}
+
+// <h1> Title </h1>
+
+*/
 // 
+
+
+
+

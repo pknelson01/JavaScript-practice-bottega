@@ -112,6 +112,20 @@ $$$$$$$
 //    $
 // `)
 
+function Diamond(op) {
+    return `
+       ${op}
+      ${op.repeat(3)}
+     ${op.repeat(5)}
+    ${op.repeat(7)}
+     ${op.repeat(5)}
+      ${op.repeat(3)}
+       ${op}
+    `
+}
+
+console.log(Diamond('0'))
+
 // exercise four : Use the DOM to fill out the form on this page: File a Complaint - Building or Facility Information (access-board.gov)
 
 

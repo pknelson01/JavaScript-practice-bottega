@@ -102,16 +102,6 @@ $$$$$$$
    $
 */
 
-// console.log(`
-//    $
-//   $$$
-//  $$$$$
-// $$$$$$$
-//  $$$$$
-//   $$$
-//    $
-// `)
-
 function Diamond(op) {
     return `
        ${op}
@@ -124,7 +114,7 @@ function Diamond(op) {
     `
 }
 
-console.log(Diamond('0'))
+console.log(Diamond('*'))
 
 // exercise four : Use the DOM to fill out the form on this page: File a Complaint - Building or Facility Information (access-board.gov)
 

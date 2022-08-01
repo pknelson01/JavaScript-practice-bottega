@@ -24,5 +24,3 @@ function palp(num) {
 
 palp(66)
 
-
-

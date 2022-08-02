@@ -26,13 +26,36 @@
 
 // narcissistic(153);
 
-function isNarcissistic(n) {
-    const numStr = `${n}`;
-    let somme = 0;
-    numStr.split("").forEach((x) => {
-        somme += Math.pow(+x, numStr.length);
-    });
-    console.log(somme === n)
+// function isNarcissistic(n) {
+//     const numStr = `${n}`;
+//     let somme = 0;
+//     numStr.split("").forEach((x) => {
+//         somme += Math.pow(+x, numStr.length);
+//     });
+//     return somme === n
+// }
+
+// isNarcissistic(153)
+
+// 10 Minute Walk
+
+// x - axis = west and east
+// y - axis = north and south
+
+function isValidWalk(walk) {
+    let ns = 0
+    let ew = 0;
+    if (walk.length === 10) {
+        for (let i of walk) {
+            if (i == 'n') ns += 1;
+            if (i == 's') ns -= 1;
+            if (i == 'e') ew += 1;
+            if (i == 'w') ew -= 1;
+        }
+    }
+    else
+        console.log(false)
+    console.log(ns === 0 && ew === 0)
 }
 
-isNarcissistic(153)
+isValidWalk('nsnsswewns')

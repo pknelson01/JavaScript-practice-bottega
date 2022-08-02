@@ -3,39 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lodash Demo</title>
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+    <title>Error Management in JavaScript</title>
 </head>
 
 <body>
 </body>
 
 <script>
-    /* times function
-    randNumber = () => {
-        return Math.round(Math.random() * 66);
+    function siteComponenet(func) {
+        return func();
     }
 
-    const sampleNumbers = _.times(11, randNumber);
+    widget = () => {
+        return '<div> Hello There </div>';
+    }
 
-    console.log(sampleNumbers);
-    */
-    /* filter
-    const troopers = [
-        { name: 'Rex', clankerKillsAverage: 77 },
-        { name: 'Fives', clankerKillsAverage: 109 },
-        { name: 'Echo', clankerKillsAverage: 76 },
-        { name: 'Wolffe', clankerKillsAverage: 82 },
-        { name: 'Gregor', clankerKillsAverage: 102 }
-    ];
-
-    const over300 = _.filter(troopers, trooper => {
-        return trooper.clankerKillsAverage > 100
-    });
-
-    console.log(over300)
-
-    */
+    try {
+        console.log(siteComponenet(widget));
+    } catch (e) {
+        console.log('An error occured with the Site Component', e);
+    }
 </script>
 
 </html>

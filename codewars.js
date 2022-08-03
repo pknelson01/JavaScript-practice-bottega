@@ -28,15 +28,15 @@
 
 
     // function isNarcissistic(n) {
-        //     const numStr = `${n}`;
-        //     let somme = 0;
-        //     numStr.split("").forEach((x) => {
-            //         somme += Math.pow(+x, numStr.length);
-            //     });
-            //     return somme === n
-            // }
+    //         const numStr = `${n}`;
+    //         let somme = 0;
+    //         numStr.split("").forEach((x) => {
+    //                 somme += Math.pow(+x, numStr.length);
+    //             });
+    //             return somme === n
+    //         }
             
-            // isNarcissistic(153)
+    //         isNarcissistic(153)
 */
 
 /* 10 Minute Walk
@@ -66,124 +66,115 @@
 
 /* Create a Phone Number
 
-function CreatePhoneNumber(arr) {
-    return `(${arr[0]}${arr[1]}${arr[2]}) ${arr[3]}${arr[4]}${arr[5]} - ${arr[6]}${arr[7]}${arr[8]}${arr[9]}`
+function CreatePhoneNumber(numbers) {
+    return `(${numbers[0]}${numbers[1]}${numbers[2]}) ${numbers[3]}${numbers[4]}${numbers[5]} - ${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}`
 }
 
-console.log(CreatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
+// console.log(CreatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
 
 */
 
 /* Decode the Morse Code
 
-    // 0 and l are empty strings because i dont know how to put down their morse code.
-    
+    decodeMorse = function (morseCode) {
+        let sentence = '';
+        let splitArray = morseCode.split(" ")
+        for (let i in splitArray) {
+            if (splitArray[i] === '.-') {
+                sentence += 'A'
+            }
+            if (splitArray[i] === '-...') {
+                sentence += 'B'
+            }
+            if (splitArray[i] === '-.-.') {
+                sentence += 'C'
+            }
+            if (splitArray[i] === '-..') {
+                sentence += 'D'
+            }
+            if (splitArray[i] === '.') {
+                sentence += 'E'
+            }
+            if (splitArray[i] === '..-.') {
+                sentence += 'F'
+            }
+            if (splitArray[i] === '--.') {
+                sentence += 'G'
+            }
+            if (splitArray[i] === '....') {
+                sentence += 'H'
+            }
+            if (splitArray[i] === '..') {
+                sentence += 'I'
+            }
+            if (splitArray[i] === '.---') {
+                sentence += 'J'
+            }
+            if (splitArray[i] === '-.-') {
+                sentence += 'K'
+            }
+            if (splitArray[i] === '.-..') {
+                sentence += 'L'
+            }
+            if (splitArray[i] === '--') {
+                sentence += 'M'
+            }
+            if (splitArray[i] === '-.') {
+                sentence += 'N'
+            }
+            if (splitArray[i] === '---') {
+                sentence += 'O'
+            }
+            if (splitArray[i] === '.--.') {
+                sentence += 'P'
+            }
+            if (splitArray[i] === '--.-') {
+                sentence += 'Q'
+            }
+            if (splitArray[i] === '.-.') {
+                sentence += 'R'
+            }
+            if (splitArray[i] === '...') {
+                sentence += 'S'
+            }
+            if (splitArray[i] === '-') {
+                sentence += 'T'
+            }
+            if (splitArray[i] === '..-') {
+                sentence += 'U'
+            }
+            if (splitArray[i] === '...-') {
+                sentence += 'V'
+            }
+            if (splitArray[i] === '.--') {
+                sentence += 'W'
+            }
+            if (splitArray[i] === '-..-') {
+                sentence += 'X'
+            }
+            if (splitArray[i] === '-.--') {
+                sentence += 'Y'
+            }
+            if (splitArray[i] === '--..') {
+                sentence += 'Z'
+            }
+            if (splitArray[i] === '') {
+                sentence += ' '
+            }
+            if (splitArray[i] === '-.-.--') {
+                sentence += '!'
+            }
+            if (splitArray[i] === '.-.-.-') {
+                sentence += '.'
+            }
+            if (splitArray[i] === '...---...') {
+                sentence += 'SOS'
+            }
+
+        };
+        return sentence.trim().split('  ').join(' ');
+    }
+
+    console.log(decodeMorse('... --- ... -.-.--'));
 
 */
-
-
-
-function decodeMorse(str) {
-    // console.log(`${x.h} ${x.e} ${x.y}   ${x.j} ${x.u} ${x.d} ${x.e}`)
-    // console.log(str.split(''))
-
-    let sentence = '';
-
-    let splitArray = str.split(" ")
-
-    for (let i in splitArray) {
-        if (splitArray[i] === '.-') {
-            sentence += 'A'
-        }
-        if (splitArray[i] === '-...') {
-            sentence += 'B'
-        }
-        if (splitArray[i] === '-.-.') {
-            sentence += 'C'
-        }
-        if (splitArray[i] === '-..') {
-            sentence += 'D'
-        }
-        if (splitArray[i] === '.') {
-            sentence += 'E'
-        }
-        if (splitArray[i] === '..-.') {
-            sentence += 'F'
-        }
-        if (splitArray[i] === '--.') {
-            sentence += 'G'
-        }
-        if (splitArray[i] === '....') {
-            sentence += 'H'
-        }
-        if (splitArray[i] === '..') {
-            sentence += 'I'
-        }
-        if (splitArray[i] === '.---') {
-            sentence += 'J'
-        }
-        if (splitArray[i] === '-.-') {
-            sentence += 'K'
-        }
-        if (splitArray[i] === '.-..') {
-            sentence += 'L'
-        }
-        if (splitArray[i] === '--') {
-            sentence += 'M'
-        }
-        if (splitArray[i] === '-.') {
-            sentence += 'N'
-        }
-        if (splitArray[i] === '---') {
-            sentence += 'O'
-        }
-        if (splitArray[i] === '.--.') {
-            sentence += 'P'
-        }
-        if (splitArray[i] === '--.-') {
-            sentence += 'Q'
-        }
-        if (splitArray[i] === '.-.') {
-            sentence += 'R'
-        }
-        if (splitArray[i] === '...') {
-            sentence += 'S'
-        }
-        if (splitArray[i] === '-') {
-            sentence += 'T'
-        }
-        if (splitArray[i] === '..-') {
-            sentence += 'U'
-        }
-        if (splitArray[i] === '...-') {
-            sentence += 'V'
-        }
-        if (splitArray[i] === '.--') {
-            sentence += 'W'
-        }
-        if (splitArray[i] === '-..-') {
-            sentence += 'X'
-        }
-        if (splitArray[i] === '-.--') {
-            sentence += 'Y'
-        }
-        if (splitArray[i] === '--..') {
-            sentence += 'Z'
-        }
-        if (splitArray[i] === '') {
-            sentence += ' '
-        }
-    };
-
-    for ()
-
-        return sentence;
-}
-
-let y = decodeMorse('.... . -.--   .--- ..- -.. .');
-
-console.log(y.trim(' '));
-
-
-
-// [ '....', '.', '-.--', '', '', '.---', '..-', '-..', '.' ]

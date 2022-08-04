@@ -76,106 +76,106 @@ function CreatePhoneNumber(numbers) {
 
 /* Decode the Morse Code
 
-    decodeMorse = function (morseCode) {
-        let sentence = '';
-        let splitArray = morseCode.split(" ")
-        for (let i in splitArray) {
-            if (splitArray[i] === '.-') {
-                sentence += 'A'
-            }
-            if (splitArray[i] === '-...') {
-                sentence += 'B'
-            }
-            if (splitArray[i] === '-.-.') {
-                sentence += 'C'
-            }
-            if (splitArray[i] === '-..') {
-                sentence += 'D'
-            }
-            if (splitArray[i] === '.') {
-                sentence += 'E'
-            }
-            if (splitArray[i] === '..-.') {
-                sentence += 'F'
-            }
-            if (splitArray[i] === '--.') {
-                sentence += 'G'
-            }
-            if (splitArray[i] === '....') {
-                sentence += 'H'
-            }
-            if (splitArray[i] === '..') {
-                sentence += 'I'
-            }
-            if (splitArray[i] === '.---') {
-                sentence += 'J'
-            }
-            if (splitArray[i] === '-.-') {
-                sentence += 'K'
-            }
-            if (splitArray[i] === '.-..') {
-                sentence += 'L'
-            }
-            if (splitArray[i] === '--') {
-                sentence += 'M'
-            }
-            if (splitArray[i] === '-.') {
-                sentence += 'N'
-            }
-            if (splitArray[i] === '---') {
-                sentence += 'O'
-            }
-            if (splitArray[i] === '.--.') {
-                sentence += 'P'
-            }
-            if (splitArray[i] === '--.-') {
-                sentence += 'Q'
-            }
-            if (splitArray[i] === '.-.') {
-                sentence += 'R'
-            }
-            if (splitArray[i] === '...') {
-                sentence += 'S'
-            }
-            if (splitArray[i] === '-') {
-                sentence += 'T'
-            }
-            if (splitArray[i] === '..-') {
-                sentence += 'U'
-            }
-            if (splitArray[i] === '...-') {
-                sentence += 'V'
-            }
-            if (splitArray[i] === '.--') {
-                sentence += 'W'
-            }
-            if (splitArray[i] === '-..-') {
-                sentence += 'X'
-            }
-            if (splitArray[i] === '-.--') {
-                sentence += 'Y'
-            }
-            if (splitArray[i] === '--..') {
-                sentence += 'Z'
-            }
-            if (splitArray[i] === '') {
-                sentence += ' '
-            }
-            if (splitArray[i] === '-.-.--') {
-                sentence += '!'
-            }
-            if (splitArray[i] === '.-.-.-') {
-                sentence += '.'
-            }
-            if (splitArray[i] === '...---...') {
-                sentence += 'SOS'
-            }
+decodeMorse = function (morseCode) {
+    let sentence = '';
+    let splitArray = morseCode.split(" ")
+    for (let i in splitArray) {
+        if (splitArray[i] === '.-') {
+            sentence += 'A'
+        }
+        if (splitArray[i] === '-...') {
+            sentence += 'B'
+        }
+        if (splitArray[i] === '-.-.') {
+            sentence += 'C'
+        }
+        if (splitArray[i] === '-..') {
+            sentence += 'D'
+        }
+        if (splitArray[i] === '.') {
+            sentence += 'E'
+        }
+        if (splitArray[i] === '..-.') {
+            sentence += 'F'
+        }
+        if (splitArray[i] === '--.') {
+            sentence += 'G'
+        }
+        if (splitArray[i] === '....') {
+            sentence += 'H'
+        }
+        if (splitArray[i] === '..') {
+            sentence += 'I'
+        }
+        if (splitArray[i] === '.---') {
+            sentence += 'J'
+        }
+        if (splitArray[i] === '-.-') {
+            sentence += 'K'
+        }
+        if (splitArray[i] === '.-..') {
+            sentence += 'L'
+        }
+        if (splitArray[i] === '--') {
+            sentence += 'M'
+        }
+        if (splitArray[i] === '-.') {
+            sentence += 'N'
+        }
+        if (splitArray[i] === '---') {
+            sentence += 'O'
+        }
+        if (splitArray[i] === '.--.') {
+            sentence += 'P'
+        }
+        if (splitArray[i] === '--.-') {
+            sentence += 'Q'
+        }
+        if (splitArray[i] === '.-.') {
+            sentence += 'R'
+        }
+        if (splitArray[i] === '...') {
+            sentence += 'S'
+        }
+        if (splitArray[i] === '-') {
+            sentence += 'T'
+        }
+        if (splitArray[i] === '..-') {
+            sentence += 'U'
+        }
+        if (splitArray[i] === '...-') {
+            sentence += 'V'
+        }
+        if (splitArray[i] === '.--') {
+            sentence += 'W'
+        }
+        if (splitArray[i] === '-..-') {
+            sentence += 'X'
+        }
+        if (splitArray[i] === '-.--') {
+            sentence += 'Y'
+        }
+        if (splitArray[i] === '--..') {
+            sentence += 'Z'
+        }
+        if (splitArray[i] === '') {
+            sentence += ' '
+        }
+        if (splitArray[i] === '-.-.--') {
+            sentence += '!'
+        }
+        if (splitArray[i] === '.-.-.-') {
+            sentence += '.'
+        }
+        if (splitArray[i] === '...---...') {
+            sentence += 'SOS'
+        }
 
-        };
-        return sentence.trim().split('  ').join(' ');
-    }
+    };
+    return sentence.trim().split('  ').join(' ');
+}
 
-    console.log(decodeMorse('... --- ... -.-.--'));
+console.log(decodeMorse('... --- ... -.-.--   .-'));
 
 */
 
@@ -199,5 +199,3 @@ function maps(x) {
 maps([1, 2, 3]);
 
 */
-
-

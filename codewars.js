@@ -199,3 +199,58 @@ function maps(x) {
 maps([1, 2, 3]);
 
 */
+
+/* Well of Ideas - Easy Version
+
+function well(x) {
+    let counterGood = 0;
+    for (let i in x) {
+        if (x[i] === 'good') {
+            counterGood += 1
+        }
+    }
+    if (counterGood === 0) {
+        return 'Fail!'
+    }
+    if (counterGood === 1 || counterGood === 2) {
+        return 'Publish!'
+    }
+    if (counterGood >= 3) {
+        return 'I smell a series!'
+    }
+}
+
+console.log(well(['bad', 'bad', 'bad', 'good', 'good']))
+
+*/
+
+/* Convert boolean values to strings 'Yes' or 'No'.
+
+function boolToWord(bool) {
+
+    if (bool === true) {
+        return 'Yes'
+    }
+    if (bool === false) {
+        return 'No'
+    }
+}
+
+console.log(boolToWord(true))
+
+*/
+
+/* Beginner - Reduce but Grow
+
+function grow(x) {
+    counter = 1;
+    for (let i in x) {
+        counter = counter * x[i]
+        console.log(counter);
+    }
+    return counter;
+}
+
+console.log(grow([1, 2, 3, 4]))
+
+*/

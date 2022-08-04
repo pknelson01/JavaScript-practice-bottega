@@ -192,21 +192,12 @@ function CreatePhoneNumber(numbers) {
 
 /* Lost without a map
 
-
-
-*/
-
-// function maps(x) {
-//     for (let i in x) {
-//         x[i] = x[i] * 2
-//     }
-//     return x;
-// }
-
-// console.log(maps([4, 5, 2, 7, 1, 8]))
-
 function maps(x) {
     return x.map(i => i * 2);
 }
 
 maps([1, 2, 3]);
+
+*/
+
+

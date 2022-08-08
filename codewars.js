@@ -255,3 +255,102 @@ console.log(grow([1, 2, 3, 4]))
 
 */
 
+/* Even or Odd
+
+function even_or_odd(number) {
+    if (number % 2 === 0) {
+        return 'Even'
+    }
+    if (number % 2 != 0) {
+        return 'Odd'
+    }
+}
+
+console.log(even_or_odd(11));
+
+*/
+
+/* Count of positives / sum of negatives
+    // function countPositivesSumNegatives(input) {
+    //     let counter = 0;
+    //     let multiplier = 0;
+
+    //     for (let i in input) {
+    //         if (input[i] < 0) {
+    //             multiplier += input[i]
+    //         };
+    //         if (input[i] > 0) {
+    //             counter += 1
+    //         };
+    //         if (input.length === 0 || input === null) {
+    //             return []
+    //         };
+    //     };
+    //     return [counter, multiplier];
+    // };
+
+    // console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]));
+
+function countPositivesSumNegatives(input) {
+    let counter = 0;
+    let multiplier = 0;
+
+    if (input === null || input.length === 0) {
+        return []
+    } else {
+        input.forEach((num) => num > 0 ? counter++ : multiplier += num);
+    }
+    return [counter, multiplier];
+};
+
+console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]));
+*/
+
+/* Positive or Negative
+function posNeg(x) {
+    if (x > 0) {
+        return 'Positive'
+    }
+    if (x < 0) {
+        return 'Negative'
+    }
+    if (x === 0) {
+        return 'Zero'
+    }
+}
+
+console.log(posNeg(0))
+*/
+
+/* Volume of a Cuboid
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+        let volume = width * length * height;
+        return volume
+    }
+}
+console.log(new Kata())
+*/
+
+/* Square(n) Sum
+function squareSum(numbers) {
+    counter = 0;
+    for (let i in numbers) {
+        let sum = numbers[i] ** 2
+        counter += sum
+    }
+    return counter
+}
+
+console.log(squareSum([1, 2, 3, 4, 5]))
+*/
+
+/* Count by X
+
+
+
+*/
+
+
+
+

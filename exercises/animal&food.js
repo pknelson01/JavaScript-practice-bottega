@@ -3,10 +3,10 @@ function animalAndFood(x, y) {
     food = [...y];
     animalPop = animal.pop();
     animalShift = animal.shift();
-    animalPopShift = animalPop + animalShift
+    animalPopShift = animalPop.toLowerCase + animalShift.toLowerCase;
     foodPop = food.pop();
     foodShift = food.shift();
-    foodPopShift = foodPop + foodShift
+    foodPopShift = foodPop.toLowerCase + foodShift.toLowerCase;
 
     if (animalPopShift === foodPopShift) {
         return true;
@@ -15,5 +15,4 @@ function animalAndFood(x, y) {
     }
 }
 
-console.log(animalAndFood('cat', 'carrot'));
-
+console.log(animalAndFood('caT', 'Carrot'));

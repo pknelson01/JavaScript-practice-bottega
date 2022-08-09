@@ -938,6 +938,7 @@ const headingGenerator = (title, typeOfHeading) => {
 
 */
 /* Build a Manual Exponent Function in JavaScript
+
 const toThePowerOf = (num, exp) => {
     const items = Array(exp).fill(num);
     const reducer = (total, currentValue) => total * currentValue;
@@ -945,14 +946,6 @@ const toThePowerOf = (num, exp) => {
 }
 
 console.log(Array(3).fill(2));
-console.log(toThePowerOf(2, 1))
-console.log(toThePowerOf(2, 2))
-console.log(toThePowerOf(2, 3))
-console.log(toThePowerOf(2, 4))
-console.log(toThePowerOf(2, 5))
-console.log(toThePowerOf(2, 7))
-console.log(toThePowerOf(2, 8))
-console.log(toThePowerOf(2, 9))
 console.log(toThePowerOf(2, 10))
 
 */

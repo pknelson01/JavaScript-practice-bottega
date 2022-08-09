@@ -7,3 +7,15 @@ export function mult(x, y) {
 export function add(x, y, z) {
     return x + y + z
 }
+
+export function posOrNeg(x) {
+    if (x > 0) {
+        return 'Positive'
+    }
+    if (x < 0) {
+        return 'Negative'
+    }
+    if (x === 0) {
+        return 'Zero'
+    }
+}

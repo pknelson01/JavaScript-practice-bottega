@@ -20,6 +20,6 @@ const sixMonthsAgo = moment().subtract(6, 'months');
 
 console.log(sixMonthsAgo.toString());
 
-let day = moment.unix(1660352929416 / 1000).utc();
+let day = moment.unix(1660352455708);
 
 console.log(day.toString());

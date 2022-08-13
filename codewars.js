@@ -351,6 +351,15 @@ console.log(squareSum([1, 2, 3, 4, 5]))
 
 */
 
+/* Return a Negative Number
+function makeNegative(num) {
+    if (num > 0) {
+        return -Math.abs(num);
+    } else {
+        return (num);
+    };
+};
 
-
+console.log(makeNegative(8))
+*/
 

@@ -346,9 +346,17 @@ console.log(squareSum([1, 2, 3, 4, 5]))
 */
 
 /* Count by X
+function countBy(x, n) {
+    let z = [];
 
+    for (let i = 1; i <= n; i++) {
+        z.push(x * i)
+    }
 
+    return z;
+}
 
+console.log(countBy(2, 5));
 */
 
 /* Return a Negative Number
@@ -363,14 +371,3 @@ function makeNegative(num) {
 console.log(makeNegative(8))
 */
 
-/* Not A CodeWars: Pretty Price
-
-function prettyPrice(x, y) {
-    let newX = Math.floor(x)
-    let total = newX + y
-    return total;
-}
-
-console.log(prettyPrice(5.95, .99));
-
-*/

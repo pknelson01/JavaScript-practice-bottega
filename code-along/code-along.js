@@ -950,4 +950,27 @@ console.log(toThePowerOf(2, 10))
 
 */
 
+/* pretty price
+
+function prettyPrice(x, y) {
+    let newX = Math.floor(x)
+    let total = newX + y
+    return total;
+}
+
+console.log(prettyPrice(5.95, .99));
+
+*/
+
+const user = {
+    name: 'Parker',
+    email: 'pk.elliott11@gmail.com',
+    favorites: [
+        'StarWars',
+        'Ava'
+    ]
+}
+
+console.log(user.favorites[1]);
+
 

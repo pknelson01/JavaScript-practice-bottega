@@ -962,15 +962,26 @@ console.log(prettyPrice(5.95, .99));
 
 */
 
-const user = {
-    name: 'Parker',
-    email: 'pk.elliott11@gmail.com',
-    favorites: [
-        'StarWars',
-        'Ava'
-    ]
+/* Remove the First and Last Element from a JavaScript Array (and brief mention of the trim function)
+
+const str = '      Hello there!     '
+console.log(str.trim());
+
+const removeFirstAndLast = arr => {
+    if (arr.length >= 3) {
+        return arr.slice(2, -2);
+    } else {
+        throw new Error("You need at least three elements in the array.");
+    }
 }
 
-console.log(user.favorites[1]);
+console.log(removeFirstAndLast([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]))
 
+console.log(removeFirstAndLast([1, 2]));
+
+*/
+
+/* 
+
+*/
 

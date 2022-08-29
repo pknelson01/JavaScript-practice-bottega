@@ -981,7 +981,23 @@ console.log(removeFirstAndLast([1, 2]));
 
 */
 
+/* How to capitalize a String 
+
+const toCapital = str => {
+    const words = str.split(" ");
+    return words.map(word => word[0].toUpperCase() + word.slice(1)).join(' ')
+}
+
+const shortStr = 'Hello There';
+
+const longStr = 'You were my brother anakin, i loved you...';
+
+console.log(toCapital(longStr));
+
+*/
+
 /* 
 
 */
+
 

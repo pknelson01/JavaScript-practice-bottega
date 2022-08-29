@@ -371,5 +371,76 @@ function makeNegative(num) {
 console.log(makeNegative(8))
 */
 
+function negativeNumber(x) {
+    if (x > 0) {
+        num = -Math.abs(x)
+    }
+    return num
+}
+
+console.log(negativeNumber(8));
+
+function posNeg(y) {
+    if (y > 0) {
+        return 'Positive'
+    }
+    if (y < 0) {
+        return 'Negative'
+    } else {
+        return 'Zero'
+    }
+}
+
+console.log(posNeg(11));
+
+function evenOrOdd(z) {
+    if (z % 2 === 0) {
+        return 'Even'
+    } else {
+        return 'Odd'
+    }
+}
+
+console.log(evenOrOdd(11));
+
+function volumeCuboid(a, b, c) {
+    // height = a ... length = b ... width = c
+    return a * b * c
+}
+
+console.log(volumeCuboid(7, 7, 2));
+
+function multipleOfEleven(i) {
+    if (i % 11 === 0) {
+        return 'is a multiple of 11'
+    } else {
+        return 'is not a multiple of 11'
+    }
+}
+
+console.log(multipleOfEleven(110));
+
+function trueOrFalse(t) {
+    if (t === true) {
+        return 'correct.'
+    }
+    else if (t === false) {
+        return 'incorrect.'
+    }
+}
+
+console.log(trueOrFalse(5 + 5 === 10));
+console.log(trueOrFalse(9 + 10 === 21));
+
+function Kenobi(h) {
+    if (h === 'Hello there') {
+        return 'GeNeRaL kEnObI'
+    } else {
+        return '...'
+    }
+}
+
+console.log(Kenobi('Hello there'));
+
 
 
